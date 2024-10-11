@@ -3,6 +3,7 @@ from constants import PLAYERS, TEAMS
 
 import clean
 import balance
+import menu
 
 if __name__ == "__main__":
     # clean the data
@@ -10,10 +11,6 @@ if __name__ == "__main__":
     
     # Balance the teams
     balanced_teams = balance.balance_teams(players_copy, TEAMS)
-    
-    # Print balanced teams to verify
-    for team, members in balanced_teams.items():
-        print(f"{team} has {len(members)} players:")
-        for member in members:
-            print(f"  - {member['name']}, Experienced: {member['experience']}, Height: {member['height']} inches")
-        print("\n")
+
+    # Call the main menu
+    menu.main_menu(balanced_teams)
