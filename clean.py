@@ -1,5 +1,6 @@
 import copy
 
+
 def clean_data(data):
     """
     Cleans and standardizes the player data.
@@ -13,13 +14,16 @@ def clean_data(data):
         data (list of dict): The original list of player dictionaries.
 
     Returns:
-        list of dict: A deep-copied list of player dictionaries with cleaned data.
+        list of dict: A deep-copied list of player dictionaries with cleaned
+        data.
     """
     players_copy = copy.deepcopy(data)
     for player in players_copy:
         player.update({
             'height': int(player['height'].split()[0]),
             'experience': True if player['experience'] == 'YES' else False,
-            'guardians': [guardian for guardian in player['guardians'].split(" and ")]
+            'guardians': [
+                guardian for guardian in player['guardians'].split(" and ")
+            ]
         })
     return players_copy

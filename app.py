@@ -8,7 +8,7 @@ import menu
 if __name__ == "__main__":
     # clean the data
     players_copy = clean.clean_data(PLAYERS)
-    
+
     # Balance the teams
     balanced_teams = balance.balance_teams(players_copy, TEAMS)
 
