@@ -15,7 +15,7 @@ def balance_teams(players, teams):
     num_players_team = len(players) / len(teams)
 
     # Initialize empty teams
-    balanced_teams = { team: [] for team in teams } # {'Panthers': [], 'Bandits': [], 'Warriors': []}
+    balanced_teams = { team: [] for team in teams }
 
     # Distribute experienced players
     distribute(experienced_players)

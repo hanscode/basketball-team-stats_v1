@@ -18,6 +18,9 @@ def display_team_stats(team_name, team_players):
     print("Players on Team:")
     print(", ".join([player['name'] for player in team_players]))
 
+    print("\nGuardians:")
+    print(", ".join([", ".join(player['guardians']) for player in team_players]))
+
     input("\nPress ENTER to continue...")
 
 def main_menu(balanced_teams):

@@ -1,22 +1,45 @@
-# Basketball Team Stats Tool
-In this project you will be writing a program that reads from the "constants" data (`PLAYERS` and `TEAMS`) in `constants.py`. This data will need to be translated into a new collection of your choosing and the fields need to be changed to something that makes more sense for Python to do its comparisons.
+# Python Web Development Techdegree
+### Project 2 - Basketball Team Stats Tool
+Author - Hans Steffens
 
+## Project Overview
+The Basketball Team Stats Tool is a console-based application designed to help organize and display information about a basketball league. The tool takes a list of players, organizes them into balanced teams, and provides statistics on team composition, including the number of experienced players, average height, and guardian contact information. This application is built as part of the Python Web Development Techdegree program, using fundamental programming concepts such as lists, dictionaries, and control flow structures.
 
-**NOTE**: Python has no concept of actual constants like some other languages out there. But it is a convention in Python to treat ALL CAPS variables as if they are in-fact constants.
+## Features
+**Data Cleaning:** Converts player data for easy processing, including standardizing heights and transforming experience status to boolean values.
+**Team Balancing:** Distributes players evenly across teams, ensuring each team has a balanced number of experienced and inexperienced players.
+**Interactive Console Menu:** Allows users to display team statistics or quit the program.
+**Detailed Team Stats:** For each team, the tool displays:
+- Total players
+- Total experienced and inexperienced players
+- Average height of players
+- List of player names
+- List of guardian names for each player
 
+## Requirements
+This project requires `Python 3` to run. No additional packages are needed, as it is built using Python’s standard library.
 
-**Steps to get started:**
+## 🛠 Installation & Set Up
 
-1. Create a new empty script file called `app.py` or `application.py`
+1. Clone the Repository:
+   ```sh
+   git clone https://github.com/hanscode/basketball-team-stats_v1.git
+   cd basketball-team-stats_v1
+   ```
+2. Run the Application
+   ```sh
+   python3 app.py
+   ```
+## Usage
+1. **Launch the Program:** Run app.py from your terminal.
+2. **Main Menu:**
+- Choose `1` to display team stats.
+- Choose `2` to quit the program.
+3. **Selecting a Team:**
+- After selecting 1, you’ll see a list of available teams. Enter the corresponding number to view statistics for that team.
+4. **Viewing Team Stats:**
+- The program displays detailed information about the team, including player and guardian lists, experience levels, and average height.
+5. **Continue or Exit:** After viewing stats, you can continue to explore other teams or return to the main menu.
 
-2. Inside this new file, you will want a Dunder Main statement:
-   For a refresh on Dunder Main:
-   https://teamtreehouse.com/library/understanding-dunder-main-main
-
-3. Any print statements or function calls you will want to be inside Dunder Main or inside a main function call which is nested inside Dunder Main.
-   If you need a refresh, check out the supplied Project 1 files/workspace for an example.
-   
-
-
-If you get stuck, try to work through the problem. Sometimes it helps to try to write/draw out your steps on paper in the order your program should run in and solve each step 1 at a time. If you are still stuck be sure to reach out in the Python Techdegree #unit-02 Slack channel.
-
+## Acknowledgments
+This project is part of the Python Web Development Techdegree program by Treehouse. Special thanks to the instructors and community for their guidance and support throughout the course.
