@@ -6,15 +6,15 @@ Author - Hans Steffens
 The Basketball Team Stats Tool is a console-based application designed to help organize and display information about a basketball league. The tool takes a list of players, organizes them into balanced teams, and provides statistics on team composition, including the number of experienced players, average height, and guardian contact information. This application is built as part of the Python Web Development Techdegree program, using fundamental programming concepts such as lists, dictionaries, and control flow structures.
 
 ## Features
-**Data Cleaning:** Converts player data for easy processing, including standardizing heights and transforming experience status to boolean values.
-**Team Balancing:** Distributes players evenly across teams, ensuring each team has a balanced number of experienced and inexperienced players.
-**Interactive Console Menu:** Allows users to display team statistics or quit the program.
-**Detailed Team Stats:** For each team, the tool displays:
-- Total players
-- Total experienced and inexperienced players
-- Average height of players
-- List of player names
-- List of guardian names for each player
+- **Data Cleaning:** Converts player data for easy processing, including standardizing heights and transforming experience status to boolean values.
+- **Team Balancing:** Distributes players evenly across teams, ensuring each team has a balanced number of experienced and inexperienced players.
+- **Interactive Console Menu:** Allows users to display team statistics or quit the program.
+- **Detailed Team Stats:** For each team, the tool displays:
+   - Total players
+   - Total experienced and inexperienced players
+   - Average height of players
+   - List of player names
+   - List of guardian names for each player
 
 ## Requirements
 This project requires `Python 3` to run. No additional packages are needed, as it is built using Python’s standard library.
