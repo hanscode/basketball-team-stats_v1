@@ -7,8 +7,6 @@ import balance
 if __name__ == "__main__":
     # clean the data
     players_copy = clean.clean_data(PLAYERS)
-    # Print the first 3 players to verify
-    print(players_copy[:3])
     
     # Balance the teams
     balanced_teams = balance.balance_teams(players_copy, TEAMS)
