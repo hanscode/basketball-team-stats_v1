@@ -1,4 +1,21 @@
 def display_team_stats(team_name, team_players):
+    """
+    Displays detailed statistics for a specified team.
+
+    This function calculates and prints the following information:
+    - Total number of players
+    - Number of experienced and inexperienced players
+    - Average player height
+    - List of player names
+    - List of guardian names
+
+    Args:
+        team_name (str): The name of the team.
+        team_players (list of dict): A list of player dictionaries assigned to the team.
+
+    Returns:
+        None
+    """
     print(f"\nTeam: {team_name} Stats")
     print("--------------------")
     print(f"Total players: {len(team_players)}")
@@ -24,6 +41,18 @@ def display_team_stats(team_name, team_players):
     input("\nPress ENTER to continue...")
 
 def main_menu(balanced_teams):
+    """
+    Displays the main menu and processes user choices.
+
+    Provides options to display team statistics or quit the program. If 'Display Team Stats'
+    is selected, prompts the user to choose a team and displays relevant statistics.
+
+    Args:
+        balanced_teams (dict): A dictionary of teams with lists of player dictionaries.
+
+    Returns:
+        None
+    """
     while True:
         print("\nBASKETBALL TEAM STATS TOOL\n")
         print("---- MENU ----\n")

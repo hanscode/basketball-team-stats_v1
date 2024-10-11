@@ -1,5 +1,18 @@
 
 def balance_teams(players, teams):
+    """
+    Balances players across teams to ensure equal numbers and experience distribution.
+
+    This function separates players into experienced and inexperienced groups,
+    then evenly distributes them across the specified teams.
+
+    Args:
+        players (list of dict): The list of cleaned player dictionaries.
+        teams (list of str): The list of team names.
+
+    Returns:
+        dict: A dictionary with team names as keys and lists of assigned players as values.
+    """
 
     def distribute(players_list):
         for i, player in enumerate(players_list):

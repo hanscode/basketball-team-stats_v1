@@ -31,7 +31,7 @@ This project requires `Python 3` to run. No additional packages are needed, as i
    python3 app.py
    ```
 ## Usage
-1. **Launch the Program:** Run app.py from your terminal.
+1. **Launch the Program:** Run `app.py` from your terminal.
 2. **Main Menu:**
 - Choose `1` to display team stats.
 - Choose `2` to quit the program.
